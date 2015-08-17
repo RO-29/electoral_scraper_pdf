@@ -43,17 +43,16 @@ def convert_pdf_to_html(path):
 
 res = convert_pdf_to_html('data.pdf')
 
-print res
-# #print res
-# soup = BeautifulSoup(res,'lxml')
-# epic_nos = soup.find_all('span',{'style':"font-family: AAAAAC+Arial; font-size:10px"})
+#print res
+soup = BeautifulSoup(res,'lxml')
+epic_nos = soup.find_all('span',{'style':"font-family: AAAAAC+Arial; font-size:10px"})
 
-# pattern = re.compile('^[ANB|UP|GLT]')
-# result_epic= list()
+pattern = re.compile('^[ANB|UP|GLT]')
+result_epic= list()
 
-# for no in epic_nos:
-#     if pattern.match(str(no.text)):
-#         #In Some Epic_No ,,Age is also bundelled along in same span  ..i.e split on white space
-#         result_epic.append(str(no.text).split(' ')[0])
+for no in epic_nos:
+    if pattern.match(str(no.text)):
+        #In Some Epic_No ,,Age is also bundelled along in same span  ..i.e split on white space
+        result_epic.append(str(no.text).split(' ')[0])
 
-# print result_epic
+print result_epic
