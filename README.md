@@ -13,15 +13,20 @@ http://bit.ly/SoCoData
 
 Tools/Library used
 ===========================
-*Python
-*PdfMiner
-*Unicodecsv
-*BeautifulSoup
-*regex
-*requests
+	*Python
+	
+	*PdfMiner
+	
+	*Unicodecsv
+	
+	*BeautifulSoup
+	
+	*regex
+	
+	*requests
 
 Why/Explain ?
 ========================
 Details about how the data was extracted/build can be found here
 
-*http://bit.ly/SoCoExp
+	*http://bit.ly/SoCoExp
